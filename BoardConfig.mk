@@ -58,7 +58,8 @@ OVERRIDE_RS_DRIVER := libRSDriverArm.so
 USE_OPENGL_RENDERER := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
-TARGET_RECOVERY_FSTAB = device/samsung/manta/fstab.manta
+TARGET_RECOVERY_FSTAB := device/samsung/manta/fstab.manta
+RECOVERY_FSTAB_VERSION := 2
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 685768704
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 14273216512
@@ -90,22 +91,22 @@ TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_manta
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/manta
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
-BOARD_SEPOLICY_DIRS := \
-	device/samsung/manta/sepolicy
+#BOARD_SEPOLICY_DIRS := \
+#	device/samsung/manta/sepolicy
 
-BOARD_SEPOLICY_UNION := \
-	file_contexts \
-	genfs_contexts \
-	adbd.te \
-	app.te \
-	compatibility.te \
-	device.te \
-	domain.te \
-	gpsd.te \
-	file.te \
-	mediaserver.te \
-	surfaceflinger.te \
-	system.te
+#BOARD_SEPOLICY_UNION := \
+#	file_contexts \
+#	genfs_contexts \
+#	adbd.te \
+#	app.te \
+#	compatibility.te \
+#	device.te \
+#	domain.te \
+#	gpsd.te \
+#	file.te \
+#	mediaserver.te \
+#	surfaceflinger.te \
+#	system.te
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
